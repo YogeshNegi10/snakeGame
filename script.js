@@ -266,7 +266,6 @@ function resetGameState() {
 }
 // ===== CONTROLS (KEYBOARD + MOBILE) =====
 
-// ===== KEYBOARD CONTROLS (INSTANT EYES) =====
 document.addEventListener("keydown", (e) => {
 
   // Prevent page scroll on space
