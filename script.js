@@ -27,7 +27,7 @@ let score = Number(localStorage.getItem("score")) || 0;
 let level = Number(localStorage.getItem("level")) || 0;
 let lives = Number(localStorage.getItem("lives")) || 3;
 let speed = Number(localStorage.getItem("speed")) || 600;
-let highScore = Number(localStorage.getItem("highScore")) || 2;
+let highScore = Number(localStorage.getItem("highScore")) || 25;
 
 displayScore.innerText = `Score : ${score}`;
 displayLevel.innerText = `Level : ${level}`;
@@ -223,7 +223,7 @@ function resetGameState() {
   level = 0;
   lives = 3;
   speed = 600;
-  highScore = localStorage.getItem('highScore')
+  highScore = localStorage.getItem('highScore') || 20
 
   snake = [{ x: Math.floor(rows / 2), y: Math.floor(cols / 2) }];
   direction = "right";
