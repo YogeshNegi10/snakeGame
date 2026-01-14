@@ -292,6 +292,12 @@ document.addEventListener("keydown", (e) => {
   canChangeDirection = false;
 });
 
+document.querySelector(".up").onclick = () => nextDirection("UP");
+document.querySelector(".down").onclick = () => nextDirection("DOWN");
+document.querySelector(".left").onclick = () => nextDirection("LEFT");
+document.querySelector(".right").onclick = () => nextDirection("RIGHT");
+
+
 // ===== BUTTONS =====
 playBtn.addEventListener("click", function () {
   startGame();
