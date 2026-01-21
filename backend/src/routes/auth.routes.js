@@ -60,7 +60,7 @@ router.get(
 
     // redirect to frontend with token
     res.redirect(
-      `https://snake-game-tan-tau.vercel.app?token=${token}`
+      `${process.env.FRONT_END_URL_1}?token=${token}`
     );
   }
 );
