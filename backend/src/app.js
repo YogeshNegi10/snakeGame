@@ -12,7 +12,7 @@ import leaderboardRouter from "./routes/leaderboard.routes.js";
 const app = express();
 
 app.use(cors({
-    origin: "*", // for now (later we can restrict)
+      origin: [process.env.FRONT_END_URL_1, process.env.FRONT_END_URL_2],
     methods: ["GET", "POST"],
   }));
 app.use(express.json());
