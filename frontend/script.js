@@ -12,7 +12,7 @@ const usernameEl = document.querySelector(".username");
 const gameOverBtnEl = document.querySelector(".game-over-btn");
 const soundBtn = document.getElementById("soundToggle");
 const logoutBtn = document.querySelector(".logout-btn");
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://snakegame-qzle.onrender.com/api";
 
 // ================= OVERLAY ELEMENTS =================
 const landingOverlay = document.querySelector(".landing-overlay");
