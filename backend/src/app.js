@@ -1,10 +1,13 @@
+import "dotenv/config"; 
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import authRoutes from "./routes/auth.routes.js";
+import gameRoutes from "./routes/game.routes.js";
 import errorMiddleware from "./middlewares/error.middleware.js";
 import "./config/passport.js";
 import passport from "passport";
+import leaderboardRouter from "./routes/leaderboard.routes.js";
 
 const app = express();
 
@@ -24,6 +27,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/auth", authRoutes);
+app.use("/api/game", gameRoutes );
+app.use("/api/public",leaderboardRouter);
 
 app.use(errorMiddleware);
 

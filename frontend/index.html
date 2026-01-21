@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <!-- ================= LANDING POPUP ================= -->
@@ -63,9 +66,8 @@
         <form data-type="signin" class="auth-form">
           <input type="email" name="email" placeholder="Email" />
           <input type="password" name="password" placeholder="Password" />
-           <span class="error">All fields are required</span>
+          <span class="error">All fields are required</span>
           <button class="primary-btn">Sign In</button>
-          
         </form>
 
         <button class="back-btn">← Back</button>
@@ -113,7 +115,7 @@
           <input type="email" name="email" placeholder="Email" />
           <input type="password" name="password" placeholder="Password" />
           <span class="error">All fields are required</span>
-          <button class="primary-btn" >Create Account</button>
+          <button class="primary-btn">Create Account</button>
         </form>
 
         <button class="back-btn">← Back</button>
@@ -188,30 +190,10 @@
         <!-- ===== TOP 3 PLAYERS ===== -->
         <div class="top-players">
           <span class="close-board" id="closeBoard">✖</span>
-          <div class="player-card second">
-            <img src="https://i.pravatar.cc/100?img=12" />
-            <h4>Akhil Rana</h4>
-            <span class="badge">@akhil</span>
-            <p>Score <b>1310</b></p>
-            <small>Rank #2</small>
-          </div>
 
-          <div class="player-card first">
-            <span class="pro">PRO</span>
-            <img src="https://i.pravatar.cc/100?img=32" />
-            <h4>Yogesh Negi</h4>
-            <span class="badge pink">@leoyogesh</span>
-            <p>Score <b>1355</b></p>
-            <small>Rank #1</small>
-          </div>
-
-          <div class="player-card third">
-            <img src="https://i.pravatar.cc/100?img=5" />
-            <h4>Sachin Rana</h4>
-            <span class="badge">@sachin</span>
-            <p>Score <b>1260</b></p>
-            <small>Rank #3</small>
-          </div>
+          <div class="player-card second" id="rank-2"></div>
+          <div class="player-card first" id="rank-1"></div>
+          <div class="player-card third" id="rank-3"></div>
         </div>
 
         <!-- ===== TABLE ===== -->
@@ -224,101 +206,8 @@
             <span>Score</span>
           </div>
 
-          <div class="table-row">
-            <span>4</span>
-            <span>Xioma Domka</span>
-            <span class="tag">@xiomara</span>
-            <span>16h 18m 53s</span>
-
-            <span>1230</span>
-          </div>
-
-          <div class="table-row">
-            <span>5</span>
-            <span>Caroline Tilo</span>
-            <span class="tag">@caroline</span>
-            <span>19h 21m 5s</span>
-
-            <span>1190</span>
-          </div>
-
-          <div class="table-row">
-            <span>6</span>
-            <span>Myron Battistini</span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>7</span>
-            <span>Myron Battistini</span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>8</span>
-            <span>Myron Battistini</span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>9</span>
-            <span>Myron Battistini</span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>10</span>
-            <span>Myron Battistini</span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>10</span>
-            <span>Myron </span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>10</span>
-            <span>Myron </span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>10</span>
-            <span>Myron </span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>10</span>
-            <span>Myron </span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-
-            <span>1095</span>
-          </div>
-          <div class="table-row">
-            <span>10</span>
-            <span>Myron </span>
-            <span class="tag">@chanel</span>
-            <span>12h 30m 33s</span>
-
-            <span>1095</span>
-          </div>
+            <div class="leaderboard-rows"></div>
+          
         </div>
       </div>
     </div>
