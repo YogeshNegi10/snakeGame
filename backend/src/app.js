@@ -14,6 +14,7 @@ const app = express();
 app.use(cors({
       origin: [process.env.FRONT_END_URL_1, process.env.FRONT_END_URL_2],
     methods: ["GET", "POST"],
+     credentials: true
   }));
 app.use(express.json());
 app.use(morgan("dev"));
