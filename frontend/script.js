@@ -458,7 +458,8 @@ function loseLife() {
     showScore(score, highScore);
     endGameSession(score, gamePlayedTime);
     gameStartTime = 0;
-    resetGameState();
+    // resetGameState();
+    console.log(lives)
     return;
   }
 
@@ -530,8 +531,9 @@ function resetGameState() {
 
 // ===== CONTROLS =====
 document.addEventListener("keydown", (e) => {
-  if (e.key === " ") e.preventDefault();
+
   if (!canChangeDirection) return;
+  console.log(e.key)
 
   if (e.key === "ArrowUp" && direction !== "down") {
     nextDirection = "up";
@@ -546,7 +548,7 @@ document.addEventListener("keydown", (e) => {
     nextDirection = "right";
     headDirection = "right";
   }
-  if (e.key === " ") {
+  if (e.key === "Shift" && lives <= 0) {
     gameOverEl.style.display = "none";
     resetGameState();
   }
