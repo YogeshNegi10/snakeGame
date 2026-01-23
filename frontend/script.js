@@ -809,7 +809,7 @@ async function loadPlayeruserStats(userId) {
   const token = localStorage.getItem("token");
 
   try {
-    const res = await fetch("http://localhost:5000/api/game/player-stats", {
+    const res = await fetch(`${API_BASE}/game/player-stats`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -820,7 +820,7 @@ async function loadPlayeruserStats(userId) {
     if (!data.success) return;
 
     let stats = data.stats;
-       console.log(stats)
+    
     const userStats = stats.find((stat) => stat.userId === userId);
 
     // 🔥 Fill UI
